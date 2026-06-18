@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">dress-up</string>
+    <string name="title_activity_main">dress-up</string>
+    <string name="package_name">com.dress.up.app</string>
+    <string name="custom_url_scheme">com.dress.up.app</string>
+</resources>
