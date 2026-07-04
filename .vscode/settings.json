@@ -18,5 +18,6 @@
     "source.fixAll.eslint": "always",
     "source.organizeImports": "always"
   },
-  "eslint.validate": ["typescript", "javascript", "html"]
+  "eslint.validate": ["typescript", "javascript", "html"],
+  "cSpell.words": ["Fileset", "Landmarker"]
 }
