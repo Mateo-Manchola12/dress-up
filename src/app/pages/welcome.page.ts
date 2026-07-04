@@ -166,7 +166,8 @@ export class WelcomePage {
 
   private async requestCameraPermission(): Promise<boolean> {
     try {
-      const hasMediaDevices = typeof window !== 'undefined' && 
+      const hasMediaDevices =
+        typeof window !== 'undefined' &&
         !!(navigator as unknown as Record<string, unknown>)['mediaDevices'];
       if (hasMediaDevices) {
         const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });

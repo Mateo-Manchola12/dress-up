@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 import type { GestureRecognizerResult } from '@mediapipe/tasks-vision';
-import {
-  FilesetResolver,
-  GestureRecognizer,
-} from '@mediapipe/tasks-vision';
+import { FilesetResolver, GestureRecognizer } from '@mediapipe/tasks-vision';
 
 @Injectable({ providedIn: 'root' })
 export class PoseService {
@@ -24,7 +21,10 @@ export class PoseService {
     });
   }
 
-  detect(video: HTMLVideoElement, _canvas?: HTMLCanvasElement | null): GestureRecognizerResult | null {
+  detect(
+    video: HTMLVideoElement,
+    _canvas?: HTMLCanvasElement | null,
+  ): GestureRecognizerResult | null {
     if (video.videoWidth === 0 || video.videoHeight === 0) {
       return null;
     }

@@ -35,7 +35,10 @@ export class PoseService {
     });
   }
 
-  detect(video: HTMLVideoElement, canvas?: HTMLCanvasElement | null): GestureRecognizerResult | null {
+  detect(
+    video: HTMLVideoElement,
+    canvas?: HTMLCanvasElement | null,
+  ): GestureRecognizerResult | null {
     if (video.videoWidth === 0 || video.videoHeight === 0) {
       return null;
     }
